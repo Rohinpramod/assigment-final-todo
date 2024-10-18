@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "mongodb+srv://rohinpramod320:aINiNHnHcoyEY5Jp@cluster0.vyvl9.mongodb.net/TodoassigFinal?retryWrites=true&w=majority";
+const API_URL = "https://assignment-final-todo.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_URL,
