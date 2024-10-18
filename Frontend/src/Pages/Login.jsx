@@ -22,7 +22,7 @@ function Login() {
         password: form.password,
       });
       localStorage.setItem("token", response.data.token);
-      navigate("/todos");
+      navigate("/");
     } catch (err) {
       if (err.response && err.response.data && err.response.data.message) {
         setError(err.response.data.message);
