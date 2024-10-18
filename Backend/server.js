@@ -20,12 +20,12 @@ app.get("/",(req,res)=>{
     res.send("Welcome to Todo API");
 });
 
-// app.use(
-//     cors({
-//       origin: "",
-//       optionsSuccessStatus: ,
-//     })
-//   );
+app.use(
+    cors({
+      origin: "https://assigment-final-todo.vercel.app/",
+      optionsSuccessStatus: 200 ,
+    })
+  );
 
 const helmet = require('helmet');
 app.use(helmet());

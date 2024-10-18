@@ -3,7 +3,7 @@ const router = express.Router();
 const { body, validationResult } = require("express-validator");
 
 const ToDo = require("../models/ToDo");
-const auth = require("../middleware/authMiddleware");
+const auth = require("../MiddleWare/authMiddleware");
 
 router.get("/", auth, async (req, res) => {
   try {
